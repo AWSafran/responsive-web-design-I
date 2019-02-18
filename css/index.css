@@ -180,10 +180,17 @@ h1{
 	padding: 15% 10% 0 10%;
 }
 
-@media(max-witdh: 800px){
+@media(max-width: 800px){
     h1{
         height: 300px;
         padding: 5% 10% 0 10%;
+    }
+}
+
+@media(max-width: 500px){
+    h1{
+        font-size: 60px;
+        height: 200px;
     }
 }
 
@@ -220,7 +227,7 @@ button{
         flex-direction: column;
         align-content: center;
         width: 95%;
-        padding: 5px 0;
+        padding: 5px 2%;
         margin: 0 auto;
     }
 }
@@ -235,7 +242,14 @@ button{
 @media(max-width: 800px){
     .mid-img{
         max-width: 100%;
-        height: auto;
+        height: 180px;
+        padding: 0 2%;
+    }
+}
+
+@media(max-width: 500px){
+    .mid-img{
+        height: 120px;
     }
 }
 
@@ -248,7 +262,7 @@ button{
 
 
 .middle-img{
-
+    margin-bottom: 20px;
 }
 
 .below-img div{
