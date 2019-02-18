@@ -69,25 +69,62 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 .container{
-	width: 1000px;
+	max-width: 1000px;
 	margin: 0 auto;
 }
 
 @media(max-width: 800px){
-    .containeer{
-        width: 800px;
+    .container{
+        max-width: 800px;
         margin: 0 auto;
     }
 }
 
+@media(max-width: 500px){
+    
+}
+
 body nav{
+    width: 100%;
 	display: flex;
 	align-items: center;
-	justify-content: space-evenly;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 20px auto 20px;
+}
+
+@media(max-width: 800px){
+    body nav{
+        width: 100%;
+        flex-wrap: wrap;
+    }
 
 }
 
-body nav a{
+body nav div{
+    display: flex;
+    justify-content: space-between;
+    width: 50%
+}
+
+@media(max-width: 800px){
+    body nav div{
+        margin-top: 40px;
+        justify-content: space-between;
+        width: 90%
+    }
+
+
+    body nav .logo-img{
+        order: -1;
+        width: 100%;
+        padding: 0 25% 0 40%;
+        flex-grow: 6;
+        margin: 0 auto;
+    }
+}
+
+body nav div a{
 	text-decoration: none;
 	color: gray;
 }
@@ -98,10 +135,24 @@ header{
 	justify-content: space-evenly;
 }
 
+@media(max-width: 800px){
+    header img{
+        display: none;
+    }
+
+}
+
 h1{
 	font-size: 72px;
 	text-align: center;
-	padding: 25% 10% 0 10%;
+	padding: 15% 10% 0 10%;
+}
+
+@media(max-witdh: 800px){
+    h1{
+        height: 300px;
+        padding: 5% 10% 0 10%;
+    }
 }
 
 button{
