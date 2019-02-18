@@ -81,7 +81,10 @@ h1, h2, h3, h4, h5 {
 }
 
 @media(max-width: 500px){
-    
+    .container{
+        max-width: 500px;
+        margin: 0 auto;
+    }
 }
 
 body nav{
@@ -177,8 +180,25 @@ button{
 
 .mid-img{
 	display: flex;
-	justify-content: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
 }
+
+@media(max-width: 800px){
+    .mid-img{
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.middle-img{
+    width: 100%;
+    height: auto;
+}
+
+
+
 
 .middle-img{
 	margin: 0 auto 2%;
