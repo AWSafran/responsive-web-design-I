@@ -69,7 +69,7 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 body{
-	width: 1000x;
+	width: 1000px;
 	margin: 0 auto;
 }
 
@@ -105,7 +105,7 @@ button{
 	width: 35%
 }
 
-.above-img section{
+.above-img div{
 	width: 45%;	
 }
 
@@ -126,7 +126,7 @@ button{
 	margin: 0 auto 2%;
 }
 
-.below-img section{
+.below-img div{
 	width: 30%;
 }
 
